@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component,Inject,OnInit, PLATFORM_ID,HostListener } from '@angular/core';
+import { isPlatformBrowser  } from '@angular/common';
 import { HeroSectionComponent } from '../HomeComponent/hero-section/hero-section.component';
 import { ClientSectionComponent } from '../HomeComponent/client-section/client-section.component';
 import { CompanySectionComponent } from '../HomeComponent/company-section/company-section.component';
@@ -19,6 +20,27 @@ import { ContactSectionComponent } from '../HomeComponent/contact-section/contac
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css'
 })
-export class LandingPageComponent {
+export class LandingPageComponent implements OnInit {
 
+  constructor( @Inject(PLATFORM_ID) private platformId: Object) {}
+  ngOnInit() {
+    if (isPlatformBrowser(this.platformId)) {
+      this.onWindowScroll(); // Trigger the function on window load if in the browser
+    } 
+  }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    if (isPlatformBrowser(this.platformId)) {
+      const image = document.getElementById('tollNo');
+      const scrollPosition = window.scrollY;
+      const triggerPoint = 100; // Adjust this value based on when you want the image to start moving
+
+      if (scrollPosition > triggerPoint) {
+        image?.classList.add('fixed');
+      } else {
+        image?.classList.remove('fixed');
+      }
+    }
+  } 
 }
