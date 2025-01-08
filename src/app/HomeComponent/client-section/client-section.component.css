@@ -1,0 +1,35 @@
+.image-slider {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%; 
+  }
+  
+  .slider-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 80s linear infinite;
+  }
+  
+  .client-logo {
+    flex: 0 0 auto;
+    padding: 2rem;
+    width: calc(5%);
+  }
+  
+  .client-logo img {
+    width: 100px;
+    height: 50px;
+    margin-left:20px ;
+    cursor: pointer;
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }

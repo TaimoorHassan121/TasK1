@@ -1,0 +1,64 @@
+#company {
+    /* background: url('https://htmljstemplates.com/static_files/images/fcbgn.jpg') no-repeat; */
+    background: rgb(218, 241, 251);
+    background: -moz-linear-gradient(-45deg, rgb(218, 241, 251) 0%, rgb(232, 246, 251) 13%, rgb(216, 238, 247) 40%, rgb(255, 220, 219) 61%, rgb(255, 220, 219) 75%,rgb(255, 210, 210) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(218, 241, 251) 0%, rgba(232, 246, 251) 13%, rgb(232, 237, 239) 40%, rgba(255, 220, 219) 61%, rgba(255, 220, 219) 75%,rgb(255, 210, 210) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgb(241, 245, 247) 0%, rgb(232, 245, 250) 13%, rgb(250, 253, 255) 40%, rgb(255, 246, 245) 71%, rgb(250, 245, 245) 80%,rgb(250, 246, 246) 100%);
+    background-size: cover;
+    /* position: absolute; */
+  }
+
+/* .about .content h3 {
+    font-weight: 700;
+    font-size: 34px;
+    color: #213b52;
+  }
+  
+  .about .content p {
+    margin-bottom: 0;
+  }
+  
+  .about .content .icon-box h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 5px 0 10px 60px;
+    color: #213b52;
+  }
+  
+  .about .content .icon-box h4 a {
+    color: #213b52;
+    transition: 0.3s;
+  }
+  
+  .about .content .icon-box h4 a:hover {
+    color: #fdc134;
+  }
+  
+  .about .content .icon-box i {
+    font-size: 48px;
+    float: left;
+    color: #fdc134;
+  }
+  
+  .about .content .icon-box p {
+    font-size: 15px;
+    color: #848484;
+    margin-left: 60px;
+  } */
+  
+  /* .about .image {
+    background-size: cover;
+  } */
+  
+ 
+  
+  /* @media (max-width: 667px) {
+    .about .image img {
+      max-width: 100%;
+    }
+  } */
+
+
+

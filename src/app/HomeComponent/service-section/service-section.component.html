@@ -1,0 +1,36 @@
+   <!-- ======= What our Services ======= -->
+
+   <div class="container">
+        <div class="row d-flex justify-content-center align-items-center mb-3">
+        <div class="col-12">
+            <h1 class="pt-5 mt-5 text-center">Our Services</h1>
+        </div>         
+            <div class="col-8">
+            <p class="text-center" >DAEWOO Fastex offers a comprehensive suite of logistics solutions,
+                tailored to meet the unique needs of our valued customers. Our services include:</p>
+            </div>       
+        </div>
+
+        <div class="row">  
+            <div class="col-xl-3 col-md-6 col-sm-12 mb-4" *ngFor="let data of serviceData">
+                <div class="row h-100" >
+                    <!-- Conversion Chart Starts-->
+                    <div class="col-12">
+                        <div class="card card_style h-100 ">
+                            <div class="card-header card-img">
+                            <img [src]="'./assets/Images/' + data.image" class="card-img-top w-100 object-fit-cover" alt="...">
+                            </div>                      
+                            <div class="card-body body_style d-flex flex-column">
+                                <h5 class="card-title">{{data.title}}</h5>
+                                <p class="card-text">{{data.desc}}</p>   
+                                <a class="nav-link text-info" href="#">Read more</a>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div>
+
+
+  <!-- ======= End What our Services ======= -->

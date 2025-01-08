@@ -1,0 +1,13 @@
+
+    .card_style {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: none;   
+        padding: .7rem;
+        background-color: #F3FBFF;
+    }
+
+    .body_style {
+        flex: 1 1 auto;
+    }

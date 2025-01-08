@@ -1,1 +1,191 @@
 /* You can add global styles to this file, and also import other style files */
+.page-style{
+    background-color: #edf9fce8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ .form-label {
+    font-size: 14px; /* Adjust the font size of the label */
+    color:#BDBDBD;
+    /* bottom: -20px; */
+    margin-top: -10px;
+    /* Adjust the color of the label */
+}
+
+.form-label {
+  font-size: 14px; /* Adjust the font size of the label */
+  color:#BDBDBD;
+  /* bottom: -20px; */
+  /* Adjust the color of the label */
+  margin-left: 1rem;
+  
+}
+.card-style{
+  border-radius:1rem;
+  border: none;
+}
+
+
+.form-select {
+    width: 100%; 
+    height: 57px; 
+    font-size: 16px; 
+    padding: 0.0rem 0.75rem; 
+    margin-top: -2rem;
+    margin-left: 0;
+    border-radius: 0.45rem; 
+    /* border-color: white; */
+    border: .5px solid#BDBDBD;
+    padding-top: 1rem;
+}
+.fake-border {
+    position: relative; /* For positioning the fake border */
+    padding: 0.475rem 0.75rem; /* Adjust padding as needed */
+    margin-top: -10px;
+}
+
+.fake-border::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 10px; /* Start from the top edge */
+    left: 0; /* Start from the left edge */
+    right: 0; /* Extend to the right edge */
+    bottom: 16px; /* Extend to the bottom edge */
+    border: 2px solid#BDBDBD; /* Fake border color and width */
+    border-radius: 0.45rem; /* Border radius to match the select */
+    pointer-events: none; /* Make sure it doesn't interfere with interactions */
+    box-sizing: border-box; /* Ensure padding and border are included in the size */
+    z-index: 1; /* Place behind the content */
+}
+
+.submitbtn {
+    margin-top: 20px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: none;
+    width: 150px;
+    height: 56px;
+    border-radius: 0.25rem;
+    background-color: #0066B3;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 0px;
+    margin-bottom: 50px;
+        
+} 
+
+.submitbtn:hover {
+    background-color: #0056b3;
+}
+  .form-group {
+    position: relative;
+    min-height: 3.8em;
+  }
+  
+  input.form-control-input {
+    height: 3.5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 1rem;
+    border: .5px solid #BDBDBD;
+    border-radius: 0.45rem;
+  }
+  
+  label.form-control-label {
+    position: absolute;
+    top: 50%;
+    left: 13px;
+    font-size: 14px;
+    text-transform: capitalize;
+    opacity: .5;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  
+  input.form-control-input:focus ~ .form-control-label,
+  input.form-control-input:not(:placeholder-shown) ~ .form-control-label {
+    top: 12px;
+    left: 10px;
+    font-size: 12px;
+    opacity: 1;
+  }
+  
+
+  .shape {
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    background-color: #fff; /* Add a background color to the footer */
+    z-index: 0;
+    
+  }
+  
+  .shape::before {
+    border-radius: 100%;
+    position: absolute;
+    background: #0066B3;
+    right: -800px;
+    left: -800px;
+    bottom: -200px;
+    content: '';
+    top: 0;
+    z-index: -1;
+  }
+
+  textarea.form-control-input {
+    top: 0;
+    left: 0;
+    border: .5px solid#BDBDBD;
+    border-radius: 0.45rem;
+  }
+  .label-textarea{
+    margin-top: -3rem;
+  }
+  textarea.form-control-input:focus ~ .form-control-label,
+  textarea.form-control-input:not(:placeholder-shown) ~ .label-textarea {
+    /* top: 3rem;
+    left: 10px;
+    font-size: 12px; */
+    opacity: 0;
+  }
+
+  .card-img{
+    background: none;
+    border: none;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .card-img img{
+    display: block;
+    transition: transform 5s;   /* smoother zoom */
+  
+  }
+  .card-img:hover img {
+    transform: scale(1.3);
+    overflow: hidden;
+    transform-origin: 50% 50%;
+  }
+
+  .is-invalid {
+    border-color: red;
+    
+  }
+  
+  .invalid-feedback {
+    display: block !important;;
+    color: red;
+    font-size: 12px;
+    margin-top: -1.1rem;
+    
+  }
+
+  .right {
+    text-align: right; /* Align text to the right */
+    color: red; /* Optional: Change text color to indicate error */
+    position: relative;
+  }
+
+  
